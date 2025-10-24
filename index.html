@@ -35,16 +35,20 @@
 </head>
 <body class="font-body text-brand-dark bg-white">
 
+    <!-- Header -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
             <a href="#home" class="flex items-center space-x-2">
                 <span class="text-3xl">🧶</span>
                 <h1 class="font-heading text-2xl font-bold text-brand-dark">Yarniverse</h1>
             </a>
             
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#home" class="nav-link text-gray-600 hover:text-brand-accent font-medium">Home</a>
                 
+                <!-- Shop Mega-Menu Dropdown -->
                 <div class="relative group">
                     <a href="#shop" class="nav-link text-gray-600 hover:text-brand-accent font-medium flex items-center">
                         Shop 
@@ -73,14 +77,15 @@
                 <a href="#contact" class="nav-link text-gray-600 hover:text-brand-accent font-medium">Contact</a>
             </nav>
             
+            <!-- Header Icons -->
             <div class="flex items-center space-x-3">
                 <button id="wishlistBtn" class="p-2.5 hover:bg-brand-gray rounded-full relative text-gray-500 hover:text-brand-dark">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
-                    <span id="wishlistCount" class="absolute -top-1 -right-1 bg-brand-accent text-white text-[10px] rounded-full w-4.5 h-4.5 flex items-center justify-center font-bold opacity-0">0</span>
+                    <span id="wishlistCount" class="absolute -top-1 -right-1 bg-brand-accent text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold opacity-0">0</span>
                 </button>
                 <button id="cartBtn" class="p-2.5 hover:bg-brand-gray rounded-full relative text-gray-500 hover:text-brand-dark">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    <span id="cartCount" class="absolute -top-1 -right-1 bg-brand-accent text-white text-[10px] rounded-full w-4.5 h-4.5 flex items-center justify-center font-bold">0</span>
+                    <span id="cartCount" class="absolute -top-1 -right-1 bg-brand-accent text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold opacity-0">0</span>
                 </button>
                 <button class="hidden md:block p-2.5 hover:bg-brand-gray rounded-full text-gray-500 hover:text-brand-dark">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -91,6 +96,7 @@
             </div>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobileMenu" class="md:hidden bg-white border-t border-gray-100 hidden">
             <div class="container mx-auto px-4 py-4 space-y-2">
                 <a href="#home" class="block py-2 text-gray-700 hover:text-brand-accent">Home</a>
@@ -105,11 +111,14 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
 
+        <!-- Hero Section -->
         <section id="home" class="py-16 md:py-24 bg-brand-gray">
             <div class="container mx-auto px-4">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Text -->
                     <div class="text-center md:text-left">
                         <h1 class="font-heading text-5xl md:text-6xl font-bold text-brand-dark mb-6 leading-tight">
                             Handmade Crochet Treasures
@@ -122,9 +131,10 @@
                         </button>
                     </div>
                     
+                    <!-- Hero "Creator's Pick" -->
                     <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
                         <div class="relative group">
-                            <img src="./images/c9.jpg" alt="Crochet Rose Bouquet" class="w-full h-auto object-cover rounded-xl">
+                            <img src="./images/c9.jpg" alt="Crochet Rose Bouquet" class="w-full h-auto object-cover rounded-xl" onerror="this.src='https://placehold.co/600x400/F7CAD0/2A303C?text=Yarniverse'">
                             <div class="absolute inset-0 bg-black/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <span class="absolute top-4 left-4 bg-white/90 text-brand-dark font-semibold px-4 py-1.5 rounded-full text-sm">Creator's Pick</span>
                         </div>
@@ -141,6 +151,7 @@
             </div>
         </section>
 
+        <!-- Shop By Category Section -->
         <section id="categories" class="py-20 md:py-28">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
@@ -149,8 +160,9 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Category Card: Keychains -->
                     <a href="#keychains" class="group block relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                        <img src="./images/c6.jpg" alt="Crochet Keychains" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="./images/c6.jpg" alt="Crochet Keychains" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/F7CAD0/2A303C?text=Keychains'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8">
                             <h3 class="font-heading text-3xl font-bold text-white">Keychains</h3>
@@ -158,8 +170,9 @@
                         </div>
                     </a>
                     
+                    <!-- Category Card: Flowers -->
                     <a href="#flowers" class="group block relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                        <img src="./images/c1.jpg" alt="Crochet Flowers" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="./images/c1.jpg" alt="Crochet Flowers" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/F7CAD0/2A303C?text=Flowers'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8">
                             <h3 class="font-heading text-3xl font-bold text-white">Flowers</h3>
@@ -167,8 +180,9 @@
                         </div>
                     </a>
                     
+                    <!-- Category Card: Journals -->
                     <a href="#journals" class="group block relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                        <img src="./images/j7.jpg" alt="Handmade Journals" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="./images/j7.jpg" alt="Handmade Journals" class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/F7CAD0/2A303C?text=Journals'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-8">
                             <h3 class="font-heading text-3xl font-bold text-white">Journals</h3>
@@ -179,6 +193,7 @@
             </div>
         </section>
 
+        <!-- Shop Section -->
         <section id="shop" class="py-20 md:py-28 bg-brand-gray">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
@@ -186,6 +201,7 @@
                     <div class="w-24 h-1 bg-brand-accent mx-auto rounded-full"></div>
                 </div>
                 
+                <!-- Filter Bar -->
                 <div class="flex flex-wrap gap-3 mb-12 justify-center">
                     <select id="sortFilter" class="btn px-5 py-2.5 border border-gray-300 rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-brand-pink/50 text-gray-700">
                         <option value="newest">Sort: Newest</option>
@@ -200,6 +216,7 @@
                     <button class="filter-btn btn px-5 py-2.5 bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 rounded-full transition-colors" data-category="custom">Custom</button>
                 </div>
 
+                <!-- Product Grid: Keychains -->
                 <div id="keychains" class="category-section mb-20">
                     <div class="text-left mb-10">
                         <h3 class="font-heading text-4xl font-bold text-brand-dark mb-3">🔑 Keychains</h3>
@@ -207,9 +224,10 @@
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
                         
+                        <!-- Product Card Example -->
                         <div class="product-card group" data-category="keychains" data-price="200" data-name="Cute Penguin Keychain">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c2.jpg" alt="Cute Penguin Keychain" class="w-full h-64 object-cover">
+                                <img src="./images/c2.jpg" alt="Cute Penguin Keychain" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Penguin'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="keychain1">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -225,7 +243,7 @@
 
                         <div class="product-card group" data-category="keychains" data-price="180" data-name="Turtle Keychain">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c3.jpg" alt="Turtle Keychain" class="w-full h-64 object-cover">
+                                <img src="./images/c3.jpg" alt="Turtle Keychain" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Turtle'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="keychain2">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -241,7 +259,7 @@
 
                         <div class="product-card group" data-category="keychains" data-price="100" data-name="Moon Keychain">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c4.jpg" alt="Moon Keychain" class="w-full h-64 object-cover">
+                                <img src="./images/c4.jpg" alt="Moon Keychain" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Moon'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="keychain3">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -257,7 +275,7 @@
 
                         <div class="product-card group" data-category="keychains" data-price="199" data-name="Perfume Holder Keychain">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c5.jpg" alt="Perfume Holder Keychain" class="w-full h-64 object-cover">
+                                <img src="./images/c5.jpg" alt="Perfume Holder Keychain" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Perfume+Holder'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="keychain4">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -273,7 +291,7 @@
 
                         <div class="product-card group" data-category="keychains" data-price="199" data-name="Octopus Magic">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c6.jpg" alt="Octopus Magic" class="w-full h-64 object-cover">
+                                <img src="./images/c6.jpg" alt="Octopus Magic" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Octopus'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="keychain5">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -289,6 +307,7 @@
                     </div>
                 </div>
 
+                <!-- Product Grid: Flowers -->
                 <div id="flowers" class="category-section mb-20">
                     <div class="text-left mb-10">
                         <h3 class="font-heading text-4xl font-bold text-brand-dark mb-3">💐 Flowers</h3>
@@ -297,7 +316,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
                         <div class="product-card group" data-category="flowers" data-price="199" data-name="Bookmark">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c7.jpg" alt="Bookmark" class="w-full h-64 object-cover">
+                                <img src="./images/c7.jpg" alt="Bookmark" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Bookmark'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="f1">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -312,7 +331,7 @@
                         </div>
                         <div class="product-card group" data-category="flowers" data-price="199" data-name="Coaster">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c8.jpg" alt="Coaster" class="w-full h-64 object-cover">
+                                <img src="./images/c8.jpg" alt="Coaster" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Coaster'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="f2">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -327,7 +346,7 @@
                         </div>
                         <div class="product-card group" data-category="flowers" data-price="200" data-name="Rose">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c9.jpg" alt="Rose" class="w-full h-64 object-cover">
+                                <img src="./images/c9.jpg" alt="Rose" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Rose'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="f3">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -342,7 +361,7 @@
                         </div>
                         <div class="product-card group" data-category="flowers" data-price="200" data-name="Sunflower">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/c1.jpg" alt="Sunflower" class="w-full h-64 object-cover">
+                                <img src="./images/c1.jpg" alt="Sunflower" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Sunflower'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="f4">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -358,15 +377,17 @@
                     </div>
                 </div>
 
+                <!-- Product Grid: Journals -->
                 <div id="journals" class="category-section mb-20">
                     <div class="text-left mb-10">
                         <h3 class="font-heading text-4xl font-bold text-brand-dark mb-3">📔 Journals</h3>
                         <p class="text-lg text-gray-500">Unique, themed journals to capture your creativity.</p>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+                        <!-- Card: K-POP -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="K-POP Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j1.jpg" alt="K-POP Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j1.jpg" alt="K-POP Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=K-POP'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j1">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -379,9 +400,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: ANIME -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="ANIME Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j2.jpg" alt="ANIME Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j2.jpg" alt="ANIME Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=ANIME'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j2">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -394,9 +416,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: Roman -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="Roman Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j3.jpg" alt="Roman Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j3.jpg" alt="Roman Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Roman'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j3">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -409,9 +432,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: BTS -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="BTS Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j4.jpg" alt="BTS Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j4.jpg" alt="BTS Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=BTS'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j4">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -424,9 +448,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: GIRLY -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="GIRLY Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j5.jpg" alt="GIRLY Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j5.jpg" alt="GIRLY Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=GIRLY'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j5">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -439,9 +464,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: BTS 2 -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="BTS 2 Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j6.jpg" alt="BTS 2 Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j6.jpg" alt="BTS 2 Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=BTS+2'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j6">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -454,9 +480,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: GIBILI -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="GIBILI Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j7.jpg" alt="GIBILI Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j7.jpg" alt="GIBILI Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=GIBILI'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j7">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -469,9 +496,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Card: GRACIE -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="GRACIE Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j8.jpg" alt="GRACIE Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j8.jpg" alt="GRACIE Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=GRACIE'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j8">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -484,9 +512,10 @@
                                 <p class="text-brand-accent font-bold text-lg">₹500</p>
                             </div>
                         </div>
+                        <!-- Other Journals... -->
                         <div class="product-card group" data-category="journals" data-price="500" data-name="K-POP 2 Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j9.jpg" alt="K-POP 2 Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j9.jpg" alt="K-POP 2 Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=K-POP+2'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j9">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -501,7 +530,7 @@
                         </div>
                         <div class="product-card group" data-category="journals" data-price="500" data-name="NEWSPAPER Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j10.jpg" alt="NEWSPAPER Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j10.jpg" alt="NEWSPAPER Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Newspaper'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j10">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -516,7 +545,7 @@
                         </div>
                         <div class="product-card group" data-category="journals" data-price="500" data-name="PURPLE Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j11.jpg" alt="PURPLE Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j11.jpg" alt="PURPLE Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Purple'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j11">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -531,7 +560,7 @@
                         </div>
                         <div class="product-card group" data-category="journals" data-price="500" data-name="WEDNESDAY Journal">
                             <div class="relative bg-gray-100 rounded-2xl overflow-hidden">
-                                <img src="./images/j12.jpg" alt="WEDNESDAY Journal" class="w-full h-64 object-cover">
+                                <img src="./images/j12.jpg" alt="WEDNESDAY Journal" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x400/F8F9FA/2A303C?text=Wednesday'">
                                 <button class="wishlist-btn absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-brand-accent hover:text-red-500 hover:scale-110 transition-all" data-product="j12">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"></path></svg>
                                 </button>
@@ -547,6 +576,7 @@
                     </div>
                 </div>
 
+                <!-- Custom Orders Section -->
                 <div id="custom" class="category-section bg-brand-pink/20 rounded-3xl p-8 md:p-16">
                     <div class="text-center mb-12">
                         <h3 class="font-heading text-4xl md:text-5xl font-bold text-brand-dark mb-4">
@@ -556,6 +586,7 @@
                     </div>
                     <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-10 shadow-md max-w-4xl mx-auto border border-gray-100">
                         <form id="customOrderForm" class="space-y-6">
+                            <!-- File Upload -->
                             <div>
                                 <label class="block text-sm font-semibold mb-2 text-gray-700">Upload Your Inspiration</label>
                                 <div id="dropZone" class="text-center py-10 border-2 border-dashed border-gray-300 rounded-xl hover:border-brand-accent transition-colors">
@@ -570,11 +601,13 @@
                                 <div id="filePreview" class="mt-4 grid grid-cols-3 md:grid-cols-5 gap-4 hidden"></div>
                             </div>
 
+                            <!-- Description -->
                             <div>
                                 <label class="block text-sm font-semibold mb-2 text-gray-700">Describe Your Vision</label>
                                 <textarea placeholder="Tell us about your custom design idea, colors, size, etc..." class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-pink resize-none" rows="4"></textarea>
                             </div>
 
+                            <!-- Contact Form -->
                             <div class="grid md:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-semibold mb-2 text-gray-700">Name *</label>
@@ -602,6 +635,7 @@
             </div>
         </section>
         
+        <!-- About Section -->
         <section id="about" class="py-20 md:py-28 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
@@ -635,6 +669,7 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="py-20 md:py-28 bg-brand-gray">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
@@ -643,6 +678,7 @@
                 </div>
                 
                 <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
                     <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
                         <h3 class="font-heading text-2xl font-bold mb-6 text-brand-dark">Send us a Message</h3>
                         <form class="space-y-5">
@@ -664,6 +700,7 @@
                         </form>
                     </div>
 
+                    <!-- Contact Info -->
                     <div class="space-y-6">
                         <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                             <h3 class="font-heading text-2xl font-bold mb-6 text-brand-dark">Contact Information</h3>
@@ -699,9 +736,11 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-brand-dark text-gray-300 py-16">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-10 mb-10">
+                <!-- Footer About -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <span class="text-3xl">🧶</span>
@@ -711,6 +750,7 @@
                     <p class="text-gray-500 text-xs">&copy; 2025 Yarniverse. All rights reserved.</p>
                 </div>
                 
+                <!-- Footer Links -->
                 <div>
                     <h4 class="font-heading font-semibold text-lg mb-4 text-white">Quick Links</h4>
                     <ul class="space-y-2">
@@ -721,6 +761,7 @@
                     </ul>
                 </div>
                 
+                <!-- Footer Categories -->
                 <div>
                     <h4 class="font-heading font-semibold text-lg mb-4 text-white">Categories</h4>
                     <ul class="space-y-2">
@@ -731,6 +772,7 @@
                     </ul>
                 </div>
                 
+                <!-- Footer Credits -->
                 <div>
                     <h4 class="font-heading font-semibold text-lg mb-4 text-white">Credits</h4>
                     <div class="space-y-2 text-gray-400 text-sm">
@@ -746,22 +788,166 @@
         </div>
     </footer>
 
+    <!-- Checkout Page (Hidden by default) -->
+    <div id="checkout-page" class="hidden fixed inset-0 bg-white z-[100] overflow-y-auto">
+        <div class="container mx-auto px-4 py-12">
+            <div class="max-w-4xl mx-auto">
+                <!-- Checkout Header -->
+                <div class="flex justify-between items-center mb-8">
+                    <h1 class="font-heading text-4xl font-bold text-brand-dark">Checkout</h1>
+                    <button type="button" onclick="document.getElementById('checkout-page').classList.add('hidden')" class="text-gray-500 hover:text-gray-800 font-semibold">
+                        &larr; Back to Shop
+                    </button>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Checkout Form -->
+                    <div class="md:col-span-1">
+                        <h2 class="font-heading text-2xl font-semibold mb-6">Shipping Details</h2>
+                        <!-- 
+                            WEB3FORMS INTEGRATION
+                            1. Go to https://web3forms.com/
+                            2. Create an account and get your access key.
+                            3. Replace "YOUR_WEB3FORMS_ACCESS_KEY" below with your key.
+                        -->
+                        <form id="checkout-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                            <input type="hidden" name="subject" value="New Order from Yarniverse!">
+                            <textarea name="order_summary" id="order_summary_input" class="hidden"></textarea>
+                            <input type="hidden" name="total_price" id="total_price_input">
+                            
+                            <div>
+                                <label for="name" class="block text-sm font-semibold mb-2 text-gray-700">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full p-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-pink bg-white">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold mb-2 text-gray-700">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full p-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-pink bg-white">
+                            </div>
+                            <div>
+                                <label for="address" class="block text-sm font-semibold mb-2 text-gray-700">Full Address (including Pincode) *</label>
+                                <textarea id="address" name="address" required class="w-full p-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-pink resize-none bg-white" rows="4"></textarea>
+                            </div>
+                            <p class="text-sm text-gray-500">You will be contacted via WhatsApp or Phone to confirm the order and for payment.</p>
+                            <button type="submit" id="place-order-btn" class="btn w-full bg-brand-accent hover:bg-brand-accent/90 text-white py-4 rounded-xl font-semibold transition-colors shadow-lg text-lg">
+                                Place Order
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Order Summary -->
+                    <div class="md:col-span-1 bg-brand-gray p-8 rounded-2xl border border-gray-200">
+                        <h2 class="font-heading text-2xl font-semibold mb-6">Your Order</h2>
+                        <div id="checkout-summary-items" class="max-h-64 overflow-y-auto mb-4 divide-y divide-gray-200">
+                            <!-- Items will be injected here by JS -->
+                        </div>
+                        <div class="border-t border-gray-300 pt-4 space-y-2 text-sm text-gray-600">
+                            <div class="flex justify-between">
+                                <span>Subtotal:</span>
+                                <span id="checkout-subtotal" class="font-medium">₹0</span>
+                            </div>
+                            <div class="flex justify-between" id="checkout-discount-row">
+                                <span>Discount:</span>
+                                <span id="checkout-discount" class="font-medium text-green-600">-₹0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Shipping:</span>
+                                <span id="checkout-shipping" class="font-medium">₹0</span>
+                            </div>
+                            <div class="border-t border-gray-300 mt-4 pt-3 flex justify-between font-bold text-lg text-brand-dark">
+                                <span>Total:</span>
+                                <span id="checkout-total">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Order Success Page (Hidden by default) -->
+    <div id="order-success-page" class="hidden fixed inset-0 bg-white z-[110] flex items-center justify-center p-4">
+        <div class="text-center">
+            <div class="text-8xl mb-6">🎉</div>
+            <h1 class="font-heading text-4xl font-bold text-brand-dark mb-4">Order Placed!</h1>
+            <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto">Thank you for your purchase. We will contact you shortly via WhatsApp or Phone to confirm your order and arrange payment.</p>
+            <button type="button" onclick="document.getElementById('order-success-page').classList.add('hidden')" class="btn bg-brand-accent hover:bg-brand-accent/90 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+
+    <!-- All JavaScript -->
     <script>
         // Global state
         let cart = [];
         let wishlist = [];
+        let appliedCoupon = null; // Ensure this is globally accessible
+        
+        const validCoupons = {
+            'WELCOME10': { discount: 10, type: 'percentage', minOrder: 0 },
+            'SAVE50': { discount: 50, type: 'fixed', minOrder: 500 },
+            'FIRST20': { discount: 20, type: 'percentage', minOrder: 300 }
+        };
 
-        // Mobile menu toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('hidden');
-        });
+        // --- Helper Functions ---
+        
+        /**
+         * Shows a toast-style success message at the top right.
+         * @param {string} message The message to display.
+         */
+        function showSuccessMessage(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'fixed top-5 right-5 bg-green-500 text-white px-5 py-3 rounded-lg z-[200] shadow-lg animate-pulse'; // Added pulse
+            messageDiv.textContent = message;
+            document.body.appendChild(messageDiv);
+            
+            // Remove pulse and fade out
+            setTimeout(() => {
+                messageDiv.classList.remove('animate-pulse');
+                messageDiv.style.transition = 'opacity 0.5s ease';
+                messageDiv.style.opacity = '0';
+                setTimeout(() => messageDiv.remove(), 500);
+            }, 2500);
+        }
 
-        // Wishlist functionality
+        /**
+         * Calculates all cart totals.
+         * @returns {object} An object containing subtotal, discount, shipping, total, etc.
+         */
+        function calculateCartTotals() {
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            let discount = 0;
+            if (appliedCoupon) {
+                discount = appliedCoupon.type === 'percentage' 
+                    ? Math.round(subtotal * appliedCoupon.discount / 100)
+                    : appliedCoupon.discount;
+            }
+            const discountedSubtotal = subtotal - discount;
+            const freeShipping = discountedSubtotal >= 500;
+            const freebie = discountedSubtotal >= 1000;
+            const shipping = freeShipping ? 0 : 50;
+            const total = discountedSubtotal + shipping;
+            
+            return {
+                subtotal,
+                discount,
+                discountedSubtotal,
+                freeShipping,
+                freebie,
+                shipping,
+                total
+            };
+        }
+
+        /**
+         * Updates the wishlist count bubble.
+         */
         function updateWishlistCount() {
             const count = wishlist.length;
             const countElement = document.getElementById('wishlistCount');
-            countElement.textContent = count;
+            countElement.textContent = count > 9 ? '9+' : count;
             countElement.style.opacity = count > 0 ? '1' : '0';
             
             // Update all wishlist buttons
@@ -778,209 +964,21 @@
             });
         }
 
+        /**
+         * Updates the cart count bubble.
+         */
         function updateCartCount() {
             const count = cart.length;
-            document.getElementById('cartCount').textContent = count;
+            const countEl = document.getElementById('cartCount');
+            countEl.textContent = count > 9 ? '9+' : count;
+            countEl.style.opacity = count > 0 ? '1' : '0';
         }
 
-        // Add to wishlist
-        document.addEventListener('click', function(e) {
-            const wishlistButton = e.target.closest('.wishlist-btn');
-            if (wishlistButton) {
-                e.preventDefault();
-                const productId = wishlistButton.getAttribute('data-product');
-                
-                if (productId && wishlist.includes(productId)) {
-                    wishlist = wishlist.filter(id => id !== productId);
-                } else if (productId) {
-                    wishlist.push(productId);
-                }
-                
-                updateWishlistCount();
-            }
-        });
+        // --- Cart Modal Functions ---
 
-        // Add to cart
-        document.addEventListener('click', function(e) {
-            const cartButton = e.target.closest('.add-to-cart');
-            if (cartButton) {
-                e.preventDefault();
-                
-                // Get product details from the card
-                const productCard = cartButton.closest('.product-card');
-                const productName = productCard.getAttribute('data-name') || productCard.querySelector('h4').textContent;
-                const productPriceText = productCard.querySelector('.text-brand-accent.font-bold').textContent;
-                const productPrice = parseInt(productPriceText.replace('₹', '').replace(',', ''));
-                
-                // Check if item already exists in cart
-                const existingItem = cart.find(item => item.name === productName);
-                if (existingItem) {
-                    existingItem.quantity += 1;
-                } else {
-                    cart.push({
-                        id: Date.now(), 
-                        name: productName,
-                        price: productPrice,
-                        priceText: productPriceText,
-                        quantity: 1
-                    });
-                }
-                updateCartCount();
-                
-                // Visual feedback
-                const originalText = cartButton.textContent.trim();
-                if (originalText.toLowerCase() === 'quick add' || originalText.toLowerCase() === 'add to cart') {
-                    cartButton.textContent = 'Added!';
-                    cartButton.classList.add('bg-green-500', 'text-white');
-                    
-                    setTimeout(() => {
-                        cartButton.textContent = originalText;
-                        cartButton.classList.remove('bg-green-500', 'text-white');
-                    }, 1500);
-                }
-            }
-        });
-
-        // Filter functionality
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('filter-btn')) {
-                // Update active filter button
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    btn.classList.remove('bg-brand-dark', 'text-white');
-                    btn.classList.add('bg-white', 'border-gray-300', 'text-gray-700');
-                });
-                e.target.classList.add('bg-brand-dark', 'text-white');
-                e.target.classList.remove('bg-white', 'border-gray-300', 'text-gray-700');
-
-                const category = e.target.getAttribute('data-category');
-                filterProducts(category);
-            }
-        });
-
-        function filterProducts(category) {
-            const sections = document.querySelectorAll('.category-section');
-            sections.forEach(section => {
-                if (category === 'all') {
-                    section.style.display = 'block';
-                } else {
-                    // Also show the "custom" section if "all" is selected
-                    if (section.id === 'custom' && category === 'all') {
-                        section.style.display = 'block';
-                    }
-                    // Main filtering logic
-                    else if (section.id !== 'custom') { // Exclude custom section from category toggle
-                         section.style.display = section.id === category ? 'block' : 'none';
-                    }
-                    // Keep custom section visible unless another category is selected
-                    else if (section.id === 'custom' && category !== 'all') {
-                        section.style.display = category === 'custom' ? 'block' : 'none';
-                    }
-                }
-            });
-        }
-
-        // Sort functionality
-        document.getElementById('sortFilter').addEventListener('change', function() {
-            const sortBy = this.value;
-            // Implement sorting logic here
-            console.log('Sorting by:', sortBy);
-            // This would require re-rendering the product grids, which is complex.
-            // For now, it just logs the value.
-        });
-
-        // Custom order form
-        document.getElementById('customOrderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your custom order request! We\'ll get back to you within 24 hours.');
-            this.reset();
-            document.getElementById('filePreview').innerHTML = '';
-            document.getElementById('filePreview').classList.add('hidden');
-        });
-
-        // File upload functionality
-        const dropZone = document.getElementById('dropZone');
-        const fileInput = document.getElementById('fileInput');
-        const filePreview = document.getElementById('filePreview');
-
-        ['dragover', 'drop'].forEach(eventName => {
-            dropZone.addEventListener(eventName, function(e) { e.preventDefault(); });
-        });
-        
-        dropZone.addEventListener('dragover', function(e) {
-            dropZone.classList.add('border-brand-accent');
-        });
-
-        dropZone.addEventListener('dragleave', function(e) {
-            dropZone.classList.remove('border-brand-accent');
-        });
-
-        dropZone.addEventListener('drop', function(e) {
-            dropZone.classList.remove('border-brand-accent');
-            const files = e.dataTransfer.files;
-            handleFiles(files);
-        });
-
-        fileInput.addEventListener('change', function() {
-            handleFiles(this.files);
-        });
-
-        function handleFiles(files) {
-            filePreview.innerHTML = '';
-            filePreview.classList.remove('hidden');
-            
-            Array.from(files).forEach(file => {
-                if (file.type.startsWith('image/')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const div = document.createElement('div');
-                        div.className = 'relative group';
-                        div.innerHTML = `
-                            <img src="${e.target.result}" class="w-full h-20 object-cover rounded-lg border border-gray-200">
-                            <button type="button" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" onclick="this.parentElement.remove()">×</button>
-                        `;
-                        filePreview.appendChild(div);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            });
-        }
-
-        // Smooth scrolling for all hash links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const target = document.querySelector(targetId);
-                if (target) {
-                    // Calculate offset for sticky header
-                    const headerOffset = document.querySelector('header').offsetHeight + 20;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Explore Collection button functionality
-        document.getElementById('exploreBtn').addEventListener('click', function() {
-            document.querySelector('a[href="#shop"]').click();
-        });
-
-        // Cart and Wishlist display functionality
-        document.getElementById('cartBtn').addEventListener('click', function() {
-            showCartModal();
-        });
-
-        document.getElementById('wishlistBtn').addEventListener('click', function() {
-            showWishlistModal();
-        });
-        
-        let appliedCoupon = null; // Ensure this is globally accessible for the modal functions
-        
+        /**
+         * Displays the cart modal.
+         */
         function showCartModal() {
             if (cart.length === 0) {
                 const modal = createModal('Shopping Cart', '<p class="text-center text-gray-500 py-12">Your cart is empty</p>');
@@ -988,20 +986,9 @@
                 return;
             }
 
-            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-            let discount = 0;
-            if (appliedCoupon) {
-                discount = appliedCoupon.type === 'percentage' 
-                    ? Math.round(subtotal * appliedCoupon.discount / 100)
-                    : appliedCoupon.discount;
-            }
-            const discountedSubtotal = subtotal - discount;
-            const freeShipping = discountedSubtotal >= 500;
-            const freebie = discountedSubtotal >= 1000;
-            const shipping = freeShipping ? 0 : 50;
-            const total = discountedSubtotal + shipping;
-            const shippingDifference = (500 - discountedSubtotal).toFixed(2);
-            const freebieDifference = (1000 - discountedSubtotal).toFixed(2);
+            const totals = calculateCartTotals();
+            const shippingDifference = (500 - totals.discountedSubtotal).toFixed(2);
+            const freebieDifference = (1000 - totals.discountedSubtotal).toFixed(2);
 
             const cartContent = `
                 <div class="max-h-64 overflow-y-auto mb-4 divide-y divide-gray-100">
@@ -1024,6 +1011,7 @@
                     `).join('')}
                 </div>
                 
+                <!-- Coupon Section -->
                 <div class="bg-brand-gray p-4 rounded-lg mb-4">
                     <div class="flex gap-2">
                         <input type="text" id="couponCode" placeholder="Enter coupon code" class="flex-1 p-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-brand-pink">
@@ -1032,31 +1020,32 @@
                     <div id="couponMessage" class="text-sm mt-2 hidden"></div>
                 </div>
 
+                <!-- Order Summary -->
                 <div class="bg-brand-gray p-4 rounded-lg">
                     <div class="space-y-2 text-sm text-gray-600">
                         <div class="flex justify-between">
                             <span>Subtotal:</span>
-                            <span class="font-medium">₹${subtotal}</span>
+                            <span class="font-medium">₹${totals.subtotal}</span>
                         </div>
-                        ${discount > 0 ? `
+                        ${totals.discount > 0 ? `
                         <div class="flex justify-between text-green-600">
                             <span>Discount:</span>
-                            <span class="font-medium">-₹${discount}</span>
+                            <span class="font-medium">-₹${totals.discount}</span>
                         </div>` : ''}
                         <div class="flex justify-between">
                             <span>Shipping:</span>
-                            <span class="font-medium ${freeShipping ? 'text-green-600' : ''}">${freeShipping ? 'FREE' : '₹' + shipping}</span>
+                            <span class="font-medium ${totals.freeShipping ? 'text-green-600' : ''}">${totals.freeShipping ? 'FREE' : '₹' + totals.shipping}</span>
                         </div>
                     </div>
                     
-                    ${!freeShipping ? `<p class="text-gray-500 text-xs mt-3 text-center">Add ₹${shippingDifference} more for free shipping</p>` : '<p class="text-green-600 text-xs mt-3 text-center">🎉 Free shipping unlocked!</p>'}
-                    ${freebie ? '<p class="text-purple-600 text-xs mt-1 text-center">🎁 Free gift included with your order!</p>' : `<p class="text-gray-500 text-xs mt-1 text-center">Spend ₹${freebieDifference} more for a free gift!</p>`}
+                    ${!totals.freeShipping ? `<p class="text-gray-500 text-xs mt-3 text-center">Add ₹${shippingDifference} more for free shipping</p>` : '<p class="text-green-600 text-xs mt-3 text-center">🎉 Free shipping unlocked!</p>'}
+                    ${totals.freebie ? '<p class="text-purple-600 text-xs mt-1 text-center">🎁 Free gift included with your order!</p>' : `<p class="text-gray-500 text-xs mt-1 text-center">Spend ₹${freebieDifference} more for a free gift!</p>`}
                     
                     <div class="border-t border-gray-300 mt-4 pt-3 flex justify-between font-bold text-lg text-brand-dark">
                         <span>Total:</span>
-                        <span>₹${total}</span>
+                        <span>₹${totals.total}</span>
                     </div>
-                    <button class="btn w-full bg-brand-dark hover:bg-brand-dark/90 text-white py-3.5 rounded-full font-semibold mt-4 transition-all">
+                    <button onclick="showCheckoutPage()" class="btn w-full bg-brand-dark hover:bg-brand-dark/90 text-white py-3.5 rounded-full font-semibold mt-4 transition-all">
                         Proceed to Checkout
                     </button>
                     <div class="text-center mt-3">
@@ -1071,15 +1060,51 @@
             // Re-apply coupon message if it exists
             if (appliedCoupon) {
                 const messageDiv = document.getElementById('couponMessage');
-                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-                messageDiv.textContent = `Coupon applied! You saved ₹${appliedCoupon.type === 'percentage' ? Math.round(subtotal * appliedCoupon.discount / 100) : appliedCoupon.discount}`;
+                const totals = calculateCartTotals();
+                messageDiv.textContent = `Coupon applied! You saved ₹${appliedCoupon.type === 'percentage' ? Math.round(totals.subtotal * appliedCoupon.discount / 100) : appliedCoupon.discount}`;
                 messageDiv.className = 'text-sm mt-2 text-green-600';
             }
         }
 
+        /**
+         * Creates and returns a modal element.
+         * @param {string} title The title of the modal.
+         * @param {string} content The HTML content of the modal.
+         * @returns {HTMLElement} The modal element.
+         */
+        function createModal(title, content) {
+            // Remove existing modal if any
+            const existingModal = document.querySelector('.modal-backdrop');
+            if (existingModal) existingModal.remove();
+
+            const modal = document.createElement('div');
+            modal.className = 'modal-backdrop fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-2xl p-6 pt-5 max-w-lg w-full mx-4 max-h-[90vh] flex flex-col shadow-2xl">
+                    <div class="flex justify-between items-center mb-4 pb-4 border-b border-gray-200">
+                        <h3 class="text-2xl font-heading font-bold text-brand-dark">${title}</h3>
+                        <button onclick="this.closest('.modal-backdrop').remove()" class="text-gray-400 hover:text-gray-700 text-3xl">&times;</button>
+                    </div>
+                    <div class="overflow-y-auto">${content}</div>
+                </div>
+            `;
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.remove();
+                }
+            });
+            
+            return modal;
+        }
+
+        // --- Wishlist Modal Functions ---
+
         function showWishlistModal() {
             const wishlistItems = wishlist.map(id => {
-                const productCard = document.querySelector(`[data-product="${id}"]`).closest('.product-card');
+                const productElement = document.querySelector(`[data-product="${id}"]`);
+                if (!productElement) return null; // Element might not be visible due to filtering
+                const productCard = productElement.closest('.product-card');
                 if (productCard) {
                     const name = productCard.getAttribute('data-name') || productCard.querySelector('h4').textContent;
                     const priceText = productCard.querySelector('.text-brand-accent.font-bold').textContent;
@@ -1114,33 +1139,8 @@
             document.body.appendChild(modal);
         }
 
-        function createModal(title, content) {
-            // Remove existing modal if any
-            const existingModal = document.querySelector('.modal-backdrop');
-            if (existingModal) existingModal.remove();
-
-            const modal = document.createElement('div');
-            modal.className = 'modal-backdrop fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
-            modal.innerHTML = `
-                <div class="bg-white rounded-2xl p-6 pt-5 max-w-lg w-full mx-4 max-h-[90vh] flex flex-col shadow-2xl">
-                    <div class="flex justify-between items-center mb-4 pb-4 border-b border-gray-200">
-                        <h3 class="text-2xl font-heading font-bold text-brand-dark">${title}</h3>
-                        <button onclick="this.closest('.modal-backdrop').remove()" class="text-gray-400 hover:text-gray-700 text-3xl">&times;</button>
-                    </div>
-                    <div class="overflow-y-auto">${content}</div>
-                </div>
-            `;
-            
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-            
-            return modal;
-        }
-
-        // Cart helper functions
+        // --- Cart & Wishlist Item Handlers ---
+        
         window.updateQuantity = function(itemId, change) {
             const item = cart.find(item => item.id === itemId);
             if (item) {
@@ -1148,6 +1148,7 @@
                 if (item.quantity <= 0) {
                     cart = cart.filter(cartItem => cartItem.id !== itemId);
                 }
+                if (cart.length === 0) appliedCoupon = null;
                 updateCartCount();
                 document.querySelector('.modal-backdrop').remove();
                 showCartModal();
@@ -1168,30 +1169,34 @@
                 });
             }
             updateCartCount();
-            
-            // Show success message
-            const messageDiv = document.createElement('div');
-            messageDiv.className = 'fixed top-5 right-5 bg-green-500 text-white px-5 py-3 rounded-lg z-50 shadow-lg';
-            messageDiv.textContent = 'Added to cart!';
-            document.body.appendChild(messageDiv);
-            setTimeout(() => messageDiv.remove(), 2000);
+            showSuccessMessage(`${name} added to cart!`);
         };
 
-        // Coupon functionality
-        const validCoupons = {
-            'WELCOME10': { discount: 10, type: 'percentage', minOrder: 0 },
-            'SAVE50': { discount: 50, type: 'fixed', minOrder: 500 },
-            'FIRST20': { discount: 20, type: 'percentage', minOrder: 300 }
+        window.removeFromCart = function(itemId) {
+            cart = cart.filter(item => item.id !== itemId);
+            if (cart.length === 0) appliedCoupon = null; // Reset coupon if cart is empty
+            updateCartCount();
+            document.querySelector('.modal-backdrop').remove();
+            showCartModal();
         };
 
+        window.removeFromWishlist = function(itemId) {
+            wishlist = wishlist.filter(id => id !== itemId);
+            updateWishlistCount();
+            document.querySelector('.modal-backdrop').remove();
+            showWishlistModal();
+        };
+        
+        // --- Coupon Functionality ---
+        
         window.applyCoupon = function() {
             const couponCode = document.getElementById('couponCode').value.toUpperCase();
             const messageDiv = document.getElementById('couponMessage');
-            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const totals = calculateCartTotals();
             
             if (validCoupons[couponCode]) {
                 const coupon = validCoupons[couponCode];
-                if (subtotal >= coupon.minOrder) {
+                if (totals.subtotal >= coupon.minOrder) {
                     appliedCoupon = coupon;
                     messageDiv.textContent = `Coupon applied! You saved.`;
                     messageDiv.className = 'text-sm mt-2 text-green-600';
@@ -1211,24 +1216,293 @@
             }
         };
 
-        window.removeFromCart = function(itemId) {
-            cart = cart.filter(item => item.id !== itemId);
-            if (cart.length === 0) appliedCoupon = null; // Reset coupon if cart is empty
-            updateCartCount();
-            document.querySelector('.modal-backdrop').remove();
-            showCartModal();
-        };
+        // --- Checkout Page Functionality ---
+        
+        /**
+         * Displays the checkout page, populated with cart data.
+         */
+        function showCheckoutPage() {
+            if (cart.length === 0) {
+                showSuccessMessage("Your cart is empty. Add items to checkout.");
+                return;
+            }
 
-        window.removeFromWishlist = function(itemId) {
-            wishlist = wishlist.filter(id => id !== itemId);
+            const totals = calculateCartTotals();
+            const checkoutPage = document.getElementById('checkout-page');
+            
+            // Populate summary items
+            const itemsContainer = document.getElementById('checkout-summary-items');
+            itemsContainer.innerHTML = cart.map(item => `
+                <div class="flex justify-between items-center py-3">
+                    <div>
+                        <h4 class="font-semibold text-sm text-brand-dark">${item.name}</h4>
+                        <p class="text-xs text-gray-500">Quantity: ${item.quantity}</p>
+                    </div>
+                    <p class="font-semibold text-sm text-brand-dark">₹${item.price * item.quantity}</p>
+                </div>
+            `).join('');
+
+            // Populate summary totals
+            document.getElementById('checkout-subtotal').textContent = `₹${totals.subtotal}`;
+            document.getElementById('checkout-discount').textContent = `-₹${totals.discount}`;
+            document.getElementById('checkout-shipping').textContent = totals.freeShipping ? 'FREE' : `₹${totals.shipping}`;
+            document.getElementById('checkout-total').textContent = `₹${totals.total}`;
+            
+            if (totals.discount === 0) {
+                document.getElementById('checkout-discount-row').style.display = 'none';
+            } else {
+                document.getElementById('checkout-discount-row').style.display = 'flex';
+            }
+
+            // Populate hidden form fields
+            const summaryText = cart.map(item => `${item.name} (x${item.quantity}) - ${item.priceText}`).join('\n');
+            document.getElementById('order_summary_input').value = summaryText;
+            document.getElementById('total_price_input').value = `₹${totals.total}`;
+
+            // Hide modal and show checkout
+            const existingModal = document.querySelector('.modal-backdrop');
+            if (existingModal) existingModal.remove();
+            
+            checkoutPage.classList.remove('hidden');
+        }
+
+        /**
+         * Handles the async submission of the checkout form to Web3Forms.
+         */
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const placeOrderBtn = document.getElementById('place-order-btn');
+            
+            placeOrderBtn.disabled = true;
+            placeOrderBtn.textContent = 'Placing Order...';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show success page
+                    document.getElementById('checkout-page').classList.add('hidden');
+                    document.getElementById('order-success-page').classList.remove('hidden');
+                    
+                    // Clear cart and form
+                    cart = [];
+                    appliedCoupon = null;
+                    updateCartCount();
+                    form.reset();
+                } else {
+                    throw new Error('Form submission failed.');
+                }
+
+            } catch (error) {
+                console.error(error);
+                showSuccessMessage('There was an error placing your order. Please try again.');
+            } finally {
+                placeOrderBtn.disabled = false;
+                placeOrderBtn.textContent = 'Place Order';
+            }
+        }
+        
+        // --- Page Load Event Listeners ---
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.toggle('hidden');
+            });
+
+            // Add to wishlist
+            document.addEventListener('click', function(e) {
+                const wishlistButton = e.target.closest('.wishlist-btn');
+                if (wishlistButton) {
+                    e.preventDefault();
+                    const productId = wishlistButton.getAttribute('data-product');
+                    
+                    if (productId && wishlist.includes(productId)) {
+                        wishlist = wishlist.filter(id => id !== productId);
+                    } else if (productId) {
+                        wishlist.push(productId);
+                    }
+                    updateWishlistCount();
+                }
+            });
+
+            // Add to cart
+            document.addEventListener('click', function(e) {
+                const cartButton = e.target.closest('.add-to-cart');
+                if (cartButton) {
+                    e.preventDefault();
+                    
+                    const productCard = cartButton.closest('.product-card');
+                    const productName = productCard.getAttribute('data-name') || productCard.querySelector('h4').textContent;
+                    const productPriceText = productCard.querySelector('.text-brand-accent.font-bold').textContent;
+                    const productPrice = parseInt(productPriceText.replace('₹', '').replace(',', ''));
+                    
+                    const existingItem = cart.find(item => item.name === productName);
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push({
+                            id: Date.now(), 
+                            name: productName,
+                            price: productPrice,
+                            priceText: productPriceText,
+                            quantity: 1
+                        });
+                    }
+                    updateCartCount();
+                    showSuccessMessage(`${productName} added to cart!`);
+                }
+            });
+
+            // Filter functionality
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.classList.remove('bg-brand-dark', 'text-white');
+                        btn.classList.add('bg-white', 'border-gray-300', 'text-gray-700');
+                    });
+                    e.target.classList.add('bg-brand-dark', 'text-white');
+                    e.target.classList.remove('bg-white', 'border-gray-300', 'text-gray-700');
+
+                    const category = e.target.getAttribute('data-category');
+                    filterProducts(category);
+                }
+            });
+            
+            // Sort functionality
+            document.getElementById('sortFilter').addEventListener('change', function() {
+                const sortBy = this.value;
+                console.log('Sorting by:', sortBy);
+                // Sorting logic would go here
+            });
+
+            // Custom order form
+            document.getElementById('customOrderForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                showSuccessMessage('Thank you! We\'ll get back to you within 24 hours.');
+                this.reset();
+                document.getElementById('filePreview').innerHTML = '';
+                document.getElementById('filePreview').classList.add('hidden');
+            });
+
+            // File upload functionality
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('fileInput');
+            const filePreview = document.getElementById('filePreview');
+
+            ['dragover', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, function(e) { e.preventDefault(); });
+            });
+            
+            dropZone.addEventListener('dragover', function(e) {
+                dropZone.classList.add('border-brand-accent');
+            });
+
+            dropZone.addEventListener('dragleave', function(e) {
+                dropZone.classList.remove('border-brand-accent');
+            });
+
+
+            dropZone.addEventListener('drop', function(e) {
+                dropZone.classList.remove('border-brand-accent');
+                const files = e.dataTransfer.files;
+                handleFiles(files);
+            });
+
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+
+            function handleFiles(files) {
+                filePreview.innerHTML = '';
+                filePreview.classList.remove('hidden');
+                
+                Array.from(files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const div = document.createElement('div');
+                            div.className = 'relative group';
+                            div.innerHTML = `
+                                <img src="${e.target.result}" class="w-full h-20 object-cover rounded-lg border border-gray-200">
+                                <button type="button" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 text-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity" onclick="this.parentElement.remove()">×</button>
+                            `;
+                            filePreview.appendChild(div);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
+
+            // Smooth scrolling for all hash links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        const headerOffset = document.querySelector('header').offsetHeight + 20;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Explore Collection button functionality
+            document.getElementById('exploreBtn').addEventListener('click', function() {
+                document.querySelector('a[href="#shop"]').click();
+            });
+
+            // Cart and Wishlist display functionality
+            document.getElementById('cartBtn').addEventListener('click', function() {
+                showCartModal();
+            });
+
+            document.getElementById('wishlistBtn').addEventListener('click', function() {
+                showWishlistModal();
+            });
+
+            // Initialize counts on page load
             updateWishlistCount();
-            document.querySelector('.modal-backdrop').remove();
-            showWishlistModal();
-        };
-
-        // Initialize counts on page load
-        updateWishlistCount();
-        updateCartCount();
+            updateCartCount();
+        });
+        
+        function filterProducts(category) {
+            const sections = document.querySelectorAll('.category-section');
+            sections.forEach(section => {
+                if (category === 'all') {
+                    section.style.display = 'block';
+                } else {
+                    // Also show the "custom" section if "all" is selected
+                    if (section.id === 'custom' && category === 'all') {
+                        section.style.display = 'block';
+                    }
+                    // Main filtering logic
+                    else if (section.id !== 'custom') { // Exclude custom section from category toggle
+                         section.style.display = section.id === category ? 'block' : 'none';
+                    }
+                    // Keep custom section visible unless another category is selected
+                    else if (section.id === 'custom' && category !== 'all') {
+                        section.style.display = category === 'custom' ? 'block' : 'none';
+                    }
+                }
+            });
+        }
     </script>
 </body>
 </html>
+
